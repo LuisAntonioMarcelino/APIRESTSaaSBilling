@@ -1,6 +1,6 @@
 import { Router } from "express";
 import {
-  login,
+  getuser,
   register,
   upgradeplan,
   deleteAccount,
@@ -8,7 +8,7 @@ import {
 
 const router = Router();
 
-router.get("/login", login);
+router.get("/login", getuser);
 router.get("/register", register);
 router.get("/upgradeplan", upgradeplan);
 router.delete("/acount", deleteAccount);
